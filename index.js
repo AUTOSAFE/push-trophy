@@ -10,7 +10,7 @@ function sleep(ms) {
 
 (async () => {
 	console.clear()
- CFonts.say(`Zexxy`, {
+ CFonts.say(`Lana`, {
             font: '3D',
             align: 'left',
             gradient: ['red', 'magenta']
@@ -44,7 +44,7 @@ const round = rs.question(`[+] Select Number  : `);
 
 });
 
-  const auth = rs.question('Auth Token Apa kontol : ');
+  const auth = rs.question('Auth Token : ');
   console.log('');
 console.clear()
   while (true) {
@@ -52,7 +52,7 @@ console.clear()
     const result = await GoStumble(auth);
     if (!result) {
 
-      console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Maybe Auth Token Masuk ?`));
+      console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Maybe Auth Token Expired ?`));
 
     } else if (result.includes('User')) {
 
@@ -64,10 +64,10 @@ console.clear()
 
 console.log(chalk.green(`\rTime : [ ${moment().format('HH:mm:ss')} ] ${chalk.red(`!`)}${chalk.green(`User : ${username}`)} | ${chalk.red(`!`)}${chalk.cyan(`Trophy : ${trophy}`)} | ${chalk.red(`!`)}${chalk.green(`Crown : ${crown}`)}
 ${chalk.red(` Status : Succes✓`)}\n`));
-await sleep(1000;
+await sleep(1500);
 
     } else if (result == 'BANNED') {
-      console.log(chalk.bgRed(`SELAMAT KAMU HARUS ULANG?`));
+      console.log(chalk.bgRed(`Akun lu di banned kontol?`));
      break;
     }
   }
