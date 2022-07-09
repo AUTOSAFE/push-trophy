@@ -28,7 +28,7 @@ const round = rs.question(`[+] Select Number  : `);
     
     const GoStumble = (auth) => new Promise((resolve, reject) => {
 
-  fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/'+round, {
+  fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/2', {
     method: 'GET',
     headers: {
       'authorization': auth
